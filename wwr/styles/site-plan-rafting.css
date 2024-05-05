@@ -7,18 +7,18 @@ body {
 }
 
 :root {
-  --primary-color: ;
-  --secondary-color: ;
-  --accent1-color: ;
-  --accent2-color: ;
+  --primary-color: #0082cc;
+  --secondary-color: #006DAA;
+  --accent1-color: #ccecfe;
+  --accent2-color: #061A40;
 
   --heading-font: 'Poppins', serif;
-  --paragraph-font: 'Old Standard', serif;
+  --paragraph-font: 'Old Standard TT', serif;
 
-  --nav-background-color: # ;
-  --nav-link-color: # ;
-  --nav-hover-link-color: # ;
-  --nav-hover-background-color: # ;
+  --nav-background-color: #21CCBB ;
+  --nav-link-color: #ffffff ;
+  --nav-hover-link-color: #1AA093 ;
+  --nav-hover-background-color: #40E0D0;
 }
 
 body {
@@ -61,4 +61,5 @@ nav a:link, nav a:visited {
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+  
 }
