@@ -33,9 +33,10 @@ nav a{
 
 h1 {
   color: steelblue;
-  border-bottom: solid steelblue;
+  border-bottom: 1px solid steelblue;
   margin-bottom: 1em;
-  margin-top: 1em;
+  margin-top: 2em;
+  padding-bottom: 0.5em;
 
   
 }
