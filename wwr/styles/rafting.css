@@ -27,12 +27,18 @@ body {
 h1,h2,h3,h4,h5,h6 {
   font-family: var(--heading-font);
   color: var(--primary-color);
-
+  text-align: center;
 }
 
 header {
+  margin: 1rem auto;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;   
 }
+
+
 
 h1 {
   width : 956px;
@@ -47,6 +53,24 @@ h1 {
   text-align : center;
 }
 
+figcaption {
+  text-align: center;
+}
+
+.figure_flex {
+  display: flex;
+
+}
+
+figure img {
+  width:200px;
+}
+
+figure {
+  padding: 0;
+  margin: 10px;
+}
+
 
 p {
   padding: 25px;
@@ -56,7 +80,10 @@ nav {
   background-color: var(--nav--color);
   font-size: 1.2rem;
   display: flex;
+  text-align: right;
 }
+
+
 
 nav a {
   display: block;
@@ -67,6 +94,10 @@ nav a {
 
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
+}
+
+nav.social-links {
+  position: relative; right: -820px; top: -85px;
 }
 
 
@@ -106,8 +137,11 @@ nav a:link, nav a:visited {
   }
 
 
- 
- 
+  footer{
+    text-align: center;
+  }
+
+
  
  
 
