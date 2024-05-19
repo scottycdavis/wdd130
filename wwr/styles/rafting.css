@@ -33,9 +33,11 @@ h1,h2,h3,h4,h5,h6 {
 header {
   margin: 1rem auto;
   padding: 20px;
-  display: flex;
+  display: grid;
   justify-content: space-between;
   align-items: center;   
+  grid-template-columns: 3fr 1fr;
+  white-space: nowrap;
 }
 
 
@@ -138,11 +140,18 @@ nav.social-links {
   }
 
 
+  .history {
+    display: flex;
+    text-align: center;
+  
+  }
+  
+ 
+
   footer{
     text-align: center;
     display: grid;
     grid-template-columns: 3fr 1fr;
-
   }
 
 
