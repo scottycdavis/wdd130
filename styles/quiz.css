@@ -33,6 +33,7 @@ form {
   border-radius: 0.5rem;
   background-color: #eee;
   display: grid;
+  text-align: center;
 }
 
 fieldset {
@@ -55,7 +56,7 @@ label, input, button, select, textarea{
 
 
 label {
-  text-align: right;
+  text-align: center;
   padding-right: 1rem;
 }
 
@@ -89,11 +90,14 @@ button:hover {
   display: grid;
   align-items: center;
   text-align: center;
+  padding: 10px;
 }
 
 .column1 {
   grid-template-columns: 3fr 1fr;
   margin: 0.5rem 0;
+  text-align: center;
+  padding: 10px;
 }
 
 
