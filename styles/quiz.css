@@ -61,8 +61,10 @@ label {
 }
 
 input, select, textarea {
-  padding: 0.5rem;
+  display: block;
+  padding: 10px;
   font-size: 1.1rem;
+  margin-bottom: 20px;
 }
 
 input[type="checkbox"] {
