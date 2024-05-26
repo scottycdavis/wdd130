@@ -15,7 +15,6 @@ body {
   max-width: 960px;
   padding: 20px;
   color: var(--accent2-color); 
-  background: linear-gradient(135deg, rgba(204, 236, 254, 0.5), rgba(35, 50, 77, 0.5));
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -45,6 +44,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 figcaption {
   text-align: center;
 }
@@ -52,6 +55,7 @@ figcaption {
 .figure_flex {
   display: flex;
   justify-content: center; 
+  
 }
 
 figure img {
@@ -97,18 +101,28 @@ nav.social-links {
 }
 
 
-.content-frame {
+.contact-form {
+  width: 400px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.content-form {
-  width: 400px;
   justify-content: center;
-  align-items: center;
 }
 
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+.contact-form input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+
+}
 
 .map {
   padding: 20px;
@@ -118,22 +132,12 @@ nav.social-links {
 }
 
 
-.contact-form {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
+.selections {
   display: flex;
   justify-content: center;
+  text-align: center;
   align-items: center;
-  text-align: left;
-  padding: 20px;
-}
-
-
-.contact-form textarea {
-  width: 100%;
-  max-width: 600px;
-  grid-column: span 2;
+  padding-bottom: 20px;
 }
 
 
@@ -155,7 +159,6 @@ footer {
   text-align: center;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  justify-content: baseline;
   align-items: baseline;
   color: var(--primary-color);
 }
