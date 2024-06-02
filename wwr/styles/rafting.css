@@ -2,12 +2,12 @@
 
 
 
-
 body {
   font-family: var(--paragraph-font);
   max-width: 960px;
   padding: 20px;
   color: var(--accent2-color); 
+  background-color: #f0f0f0;
 }
 
 :root {
@@ -41,26 +41,39 @@ header {
   position: relative;
 }
 
+
+
 h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 3em; /* Adjust size as needed */
+  font-size: 3em; 
   font-weight: bold;
   text-transform: uppercase;
-  color: #fff; /* Text color */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
-  padding: 20px; /* Add padding for better spacing */
+  color: #fff; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  padding: 20px; 
   text-align: center;
-  background-color: rgba(107, 197, 211, 0.7); /* Semi-transparent background color */
+  background-color: rgba(107, 197, 211, 0.7); 
   position: absolute;
-  top: 25%; /* Position it in the middle vertically */
-  left: 50%; /* Position it in the middle horizontally */
-  transform: translate(-50%, -50%); /* Center it precisely */
-  width: 80%; /* Adjust width as needed */
-  max-width: 1050px; /* Limit the maximum width */
+  top: 25%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 80%; 
+  max-width: 1050px; 
   text-shadow:
     -1px -1px 1px rgba(107, 197, 211, 0.7);
   background-clip: padding-box;
 }
+
+
+.hero {
+  position: relative;
+}
+
+
+
+
+
+
 
 
 /*h1 {
@@ -100,6 +113,8 @@ figcaption {
 
 figure img {
   width: 175px;
+  height: 120px;
+  object-fit: cover;
 }
 
 figure {
@@ -145,29 +160,35 @@ nav.social-links {
   h1 {
   color : var(--accent1-color);
   }
+
   .hero article img {
     width : 200px;
     float : right;
     padding : 13px;
     
     }
+
 .hero img {
   display: block;
   width: 100%;
   height: auto;
 }
+
+
 .hero article {
-  width : 815px;
+  width : 806px;
   padding : 1px;
   position : absolute;
   right : 0;
   left : 0;
-  top : 90px;
+  top : 267px;
   background-color : rgba(0, 221, 255, 0.7);
   margin: auto;
   color : var(--accent1-color);
   text-align : center;
   }
+
+  
   .history {
     display: flex;
     text-align: center;
@@ -176,7 +197,9 @@ nav.social-links {
 
   .history img {
     width: 400px;
-    padding: 20px
+    padding: 20px;
+    border-radius: 10px;
+
   }
 
 .contact-form {
@@ -209,14 +232,15 @@ nav.social-links {
   align-items: center;
 }
 
-
 .selections {
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding-bottom: 20px;
-  margin-bottom: 10px;
 }
 
+.selections input[type="radio"] {
+  margin-right: 5px; 
+}
 
 .container{
   background: url("bg.png");
@@ -248,8 +272,8 @@ nav.social-links {
 
 .input-group {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
+  flex-direction: column; 
+  align-items: center; 
   margin-bottom: 20px;
 }
 
@@ -269,9 +293,11 @@ nav.social-links {
 .btn{
   background: #0082cc;
   color: white;
-  padding: 0 20px;
+  padding: 12px 20px;
   text-transform: uppercase;
   cursor: pointer;
+  border-radius: 4px;
+  font-size: 1em;
 }
 
 button {
@@ -279,7 +305,7 @@ button {
   color: #000000;
   padding: 25px 50px;
   margin-right: 10px;
-  border: none;
+  border: 1px solid #ccc;
   border-radius: 20px;
 }
 
@@ -322,6 +348,8 @@ button:hover {
   }
 }
 
+
+
 .cta-section {
   text-align: center;
   margin-top: 40px;
@@ -350,7 +378,75 @@ button:hover {
 }
 
 .cta-section .btn:hover {
-  background-color: #006DAA; /* Darker shade of primary color on hover */
+  background-color: #006DAA; 
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.grid-item .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+  opacity: 0; 
+}
+
+.trip-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+
+
+}
+
+
+.trip-table th {
+  background-color: #0082cc; 
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+  border: 2px solid #0082cc; 
+
+
+}
+
+
+.trip-table tr {
+}
+
+.trip-table tr:nth-child(even) {
+  background-color: #f2f2f2; 
+}
+
+.trip-table td {
+  padding: 10px;
+  border: 0.5px solid #0082cc; 
+
+}
+
+.trip-table tbody tr:hover {
+  background-color: #cce5ff; 
 }
 
 
